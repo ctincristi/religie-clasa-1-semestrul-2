@@ -1,0 +1,955 @@
+@CHARSET "ISO-8859-1";
+
+/* .ui-dialog-background */
+/* { */
+/* opacity: 0.5; */
+/* display: block !important; */
+/* -webkit-transition: opacity 0.5s ease-in; */
+/* } */
+/* .ui-dialog-background.pop.in */
+/* { */
+/* opacity: 1; */
+/* -webkit-transition: opacity 0.5s ease-in; */
+/* } */
+/* .ui-dialog */
+/* { */
+/* background: transparent !important; */
+
+/* } */
+*:focus {
+    outline: 0;
+}
+.ui-tabs .status1 {
+    background: blue-light;font-size: 20px;font-weight:bold;
+}
+.ui-tabs .status2 {
+    background: blue-light;
+    font-size: 20px;font-weight:bold;
+}
+
+.ui-tabs .ui-tabs-nav
+{
+background: rgb(230,152,83);
+}
+.btn_login {
+  background: #fdedaa;
+  background-image: -webkit-linear-gradient(top, #fdedaa,#c16215);/*#faf3c3, #d1bf77*/
+  background-image: -moz-linear-gradient(top,#fdedaa, #c16215);
+  background-image: -ms-linear-gradient(top, #fdedaa,  #c16215);
+  background-image: -o-linear-gradient(top, #fdedaa,  #c16215);
+  background-image: linear-gradient(to bottom, #fdedaa,  #c16215);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  text-shadow: 1px 2px 1px #d1d1b3;
+  -webkit-box-shadow: 0px 2px 2px #000000;
+  -moz-box-shadow: 0px 2px 2px #000000;
+  box-shadow: 0px 2px 2px #000000;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  padding: 5px 30px 5px 30px;
+  border: solid #e57334 1px;
+  text-decoration: none;
+	cursor:pointer;
+}
+
+.btn_login:hover {
+  background: #c16215;
+  background-image: -webkit-linear-gradient(top,#c16215, #fdedaa);
+  background-image: -moz-linear-gradient(top, #c16215, #fdedaa);
+  background-image: -ms-linear-gradient(top, #c16215, #fdedaa);
+  background-image: -o-linear-gradient(top, #c16215, #fdedaa);
+  background-image: linear-gradient(to bottom, #c16215, #fdedaa);
+  text-decoration: none;
+  cursor:pointer;
+}
+
+
+.inputName {
+  background: #f5f4f0;
+ -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
+  text-shadow: 1px 2px 1px #d1d1b3;
+  -webkit-box-shadow: 0px 2px 2px #000000;
+  -moz-box-shadow: 0px 2px 2px #000000;
+  box-shadow: 0px 1px 1px #000000;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  padding: 5px 30px 5px 30px;
+  border: solid #e57334 1px;
+  text-decoration: none;
+
+}
+
+
+img,td,div{
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+.background_book {
+	font-family: 'Times New Roman', serif, 'Arial', 'Georgia'; 
+  	background-color: #d39d5f;
+/*  background: url("../images/butoane_main/fundal_background.jpg");  */
+
+}
+#background_buttons{
+	
+	position:absolute;
+	background: url("../images/butoane_main/bara.png") no-repeat;
+	margin:0;
+	padding:0px;
+	margin:0px;
+	top:0px; 
+	left:0px;
+	
+	width:1000px;
+	height:63px;
+}
+
+.imgSel{
+	padding-top:10px;position:absolute;
+	left:10px;bottom:15px;width:20px
+}
+
+
+.imgTick{
+	padding-top:10px;position:absolute;
+	left:0px;width:20px
+}
+
+.imgTick:hover{
+	padding-top:10px;
+	left:1px;width:20px
+}
+
+.imgCross{
+	padding-top:10px;position:absolute;
+	left:25px;width:20px
+}
+
+.imgCross:hover{
+	padding-top:10px;
+	left:26px;width:20px
+}
+#headerDiv{
+	position:relative;
+	padding:0px;
+	margin:0px;
+	top:0px; 
+	left:0px;
+}
+
+
+#potentiometer {
+	z-index: 2000;
+	position: absolute;
+	margin: 0;
+	background: url("../images/butoane_main/backgroundPotentiometer.png") no-repeat;
+	background-position:bottom; 
+	width: 164px;
+	height: 44px;
+	top:10px;
+	line-height:44px;
+	white-space: nowrap;
+	left:0px;
+	
+}
+
+.controlRemove {
+	z-index:2000;
+	position: absolute;
+	background: url("../images/butoane_main/minus.png") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	width: 17px;
+	height: 4px;
+	line-height:4px;
+	white-space: nowrap;
+	left:10px;
+	top:20px;
+}
+
+.controlRemove:hover {
+	z-index:2000;
+	position: absolute;
+	background: url("../images/butoane_main/minus2.png") no-repeat;
+	margin: 0;
+	width: 17px;
+	height: 4px;
+	
+}
+
+.controlRemove:active {
+	position: absolute;
+	margin: 0;
+}
+
+#mySlider {
+	z-index:2000;
+	position: absolute;
+	margin: 0;
+	width: 100px;
+	height:0px;
+	color:  #ed882d;
+	font-size: 40px;
+	font-weight: bold;
+	left:30px;
+	top:-5px;
+}
+
+
+
+.controlAdd {
+	z-index:2000;
+	position: absolute;
+	background: url("../images/butoane_main/plus.png") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	width: 17px;
+	height: 15px;
+	line-height:15px;
+	white-space: nowrap;
+	right:5px;
+	top:14px;
+}
+
+.controlAdd:hover {
+	position: absolute;
+	background: url("../images/butoane_main/plus2.png") no-repeat;
+	margin: 0;
+	width: 17px;
+	height: 15px;
+	
+}
+
+.controlAdd:active {
+	position: absolute;
+}
+
+#pagination {
+	z-index: 2000;
+	margin: 0;
+	position: absolute;
+	background: url("../images/butoane_main/backgroundPagination.png") no-repeat;
+	width: 442px;
+	height: 61px;
+	line-height:61px;
+	white-space: nowrap;
+	left:165px;
+}
+
+.pagination .first {
+	z-index:2001;
+	position: absolute;
+	background: url("../images/butoane_main/dubla_sageata1.png") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	width: 44px;
+	height: 32px;
+	top: 13px;
+	line-height:32px;
+	white-space: nowrap;
+	left:40px
+}
+
+.pagination .first:hover {
+	position: absolute;
+	background: url("../images/butoane_main/dubla_sageata2.png") no-repeat;
+	width: 44px;
+	height: 32px;
+	line-height:32px;
+	
+}
+
+.pagination .first:active {
+	position: absolute;
+	top: 14px;
+}
+
+.prev {
+	z-index:2001;
+	position: absolute;
+	background: url("../images/butoane_main/sageata1.png") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	width: 25px;
+	height: 32px;
+	top: 13px;
+	line-height:32px;
+	white-space: nowrap;
+	left:100px;
+}
+
+.prev:hover {
+	position: absolute;
+	background: url("../images/butoane_main/sageata2.png") no-repeat;
+	width: 25px;
+	height: 32px;
+
+}
+
+.prev:active {
+	position: absolute;
+	top: 14px;
+}
+#text_span{
+	position:absolute;
+	white-space: nowrap;
+	left:140px;
+	color:black;
+	
+}
+.text_pagination {
+	z-index:2000;
+	position: absolute;
+	background: url("../images/butoane_main/inputPagination.png") no-repeat;
+	border: 0;
+	width: 48px;
+	height: 44px;
+	color:black;
+	font-weight:bold;
+	font: Times New Roman;
+	font-size:18px;
+	text-align: center;
+	top:7px;
+	line-height:20px;
+	/*cursor:pointer;*/
+	white-space: nowrap;
+	left:240px;
+}
+
+#spanMaxPage{
+	position:absolute;
+	white-space: nowrap;
+	left:290px;
+	color:black;
+}
+
+.pagination .next {
+	z-index:2000;
+	position: absolute;
+	background: url("../images/butoane_main/sageata3.png") no-repeat;
+	margin: 0;
+/* 	display: inline-block; */
+	border: 0;
+	width: 25px;
+	height: 32px;
+	top: 13px;
+	line-height:32px;
+	white-space: nowrap;
+	left:320px;
+}
+
+pagination .next:hover {
+	position: absolute;
+	background: url("../images/butoane_main/sageata4.png") no-repeat;
+	width: 25px;
+	height: 32px;
+}
+
+pagination .next:active {
+	position: absolute;
+	top: 14px;
+	
+}
+
+.pagination .last {
+	z-index:2000;
+	position: absolute;
+	background: url("../images/butoane_main/dubla_sageata4.png") no-repeat;
+	width: 44px;
+	height: 32px;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	top: 13px;
+	line-height:32px;
+	white-space: nowrap;
+	left:360px;
+}
+
+.pagination .last:hover {
+	position: absolute;
+	background: url("../images/butoane_main/dubla_sageata3.png") no-repeat;
+	width: 44px;
+	height: 32px;
+	top: 13px;
+	line-height:32px;
+}
+
+.pagination .last:active {
+	position: absolute;
+	top: 14px;
+	line-height:32px;
+}
+
+.cuprins {
+	z-index: 2000;
+	position: absolute;
+	background: url("../images/butoane_main/cuprins1.png") no-repeat;
+	width: 116px;
+	height: 44px;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	top:10px;
+	left:605px;
+}
+
+.cuprins:hover {
+	position: absolute;
+	background: url("../images/butoane_main/cuprins2.png") no-repeat;
+	width: 116px;
+	height: 44px;
+	top: 10px;
+	
+}
+
+.cuprins:active {
+	position: absolute;
+	top: 11px;
+}
+.portofoliu {
+	z-index: 2000;
+	position: absolute;
+	background: url("../images/butoane_main/ajutor1.png") no-repeat;
+	width: 116px;
+	height: 44px;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	top: 10px;
+	left:725px;
+}
+
+.portofoliu:hover {
+	position: absolute;
+	background: url("../images/butoane_main/ajutor2.png") no-repeat;
+	width: 116px;
+	height: 44px;
+	top: 10px;
+}
+
+.portofoliu:active {
+	position: absolute;
+	top: 11px;
+}
+
+
+.rezultate {
+	z-index:2000;
+	position: absolute;
+	background: url("../images/butoane_main/rezultate1.png") no-repeat;
+	width: 116px;
+	height: 44px;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	top: 10px;top: 10px;
+	left:725px;left:845px
+}
+
+.rezultate:hover {
+	position: absolute;
+	background: url("../images/butoane_main/rezultate2.png") no-repeat;
+	width: 116px;
+	height: 44px;
+	top: 10px; top: 10px;
+	left:725px;left:845px
+}
+.rezultate:active {
+	position: absolute;
+	top: 11px;top: 10px;
+	left:725px;left:845px
+}
+.coperta {
+	z-index: 2;
+	position: fixed;
+	cursor:pointer;
+	left:5%;
+    top: 50%;
+/*	background: url("../images/pagina/copertaE1.png") no-repeat;*/
+	width: 495px;
+	height: 622px;
+	margin-top:-311px;
+	margin-left:-297.5px;
+	
+}
+
+	
+.btn_information {/*casti*/
+	z-index: 2;
+ 	background: url("../images/butoane_main/casti.png") no-repeat; 
+	background-size: cover;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	cursor:pointer;
+}
+.btn_information1 {/*casti*/
+	z-index: 2;
+ 	background: url("../images/butoane_main/casti.png") no-repeat; 
+	background-size: cover;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	cursor:pointer;
+}
+.btn_information:hover {
+	z-index: 2;
+	background: url("../images/butoane_main/casti.png") no-repeat;
+	margin: 0;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	cursor:pointer;
+}
+
+.btn_information:active {
+	z-index: 2;
+	margin: 0;
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+
+.corner_left_down{
+	z-index: 3; 
+	position: absolute;
+	left:39px;
+	bottom:17px;
+	background: url("../images/butoane_main/corner_left_down2.png") no-repeat;
+	margin: 0;
+	display: inline-block;
+	width: 129px;
+	height: 233px;
+	
+	cursor:pointer;
+}
+
+.corner_left_down:hover {
+	z-index: 3;
+	left:39px;
+	bottom:17px;
+	background: url("../images/butoane_main/corner_left_down1.png") no-repeat;
+	margin: 0;
+	width: 129px;
+	height: 233px;
+	position: absolute;
+	cursor:pointer;
+}
+
+.corner_left_down:active {
+	z-index: 3;
+	left:39px;
+	bottom:17px;
+	margin: 0;
+	width: 129px;
+	height: 233px;
+	position: absolute;
+	cursor:pointer;
+}
+
+.corner_left_up{
+	z-index: 3; 
+	position: absolute;
+	left:39px;
+	top:18px;
+    background: url("../images/butoane_main/corner_left_up2.png") no-repeat;
+	margin: 0;
+	display: inline-block;
+	width: 129px;
+	height: 233px;
+	cursor:pointer;
+}
+
+.corner_left_up:hover {
+	z-index: 3; 
+	position: absolute;
+	left:39px;
+	top:18px;
+	background: url("../images/butoane_main/corner_left_up1.png") no-repeat;
+	margin: 0;
+	width: 129px;
+	height: 233px;
+	cursor:pointer;
+}
+
+.corner_left_up:active {
+	z-index: 3;
+	left:39px;
+	top:18px;
+	position: absolute;
+	margin: 0;
+	width: 129px;
+	height: 233px;
+	cursor:pointer;
+}
+
+.corner_right_up{
+	z-index: 3; 
+	position: absolute;
+	right:43px;
+	top:18px;
+    background: url("../images/butoane_main/corner_right_up2.png") no-repeat;
+	margin: 0;
+	display: inline-block;
+	width: 129px;
+	height: 233px;
+	cursor:pointer;
+}
+
+.corner_right_up:hover {
+	z-index: 3; 
+	position: absolute;
+	right:43px;
+	top:18px;
+	background: url("../images/butoane_main/corner_right_up1.png") no-repeat;
+	margin: 0;
+	width: 129px;
+	height: 233px;
+	cursor:pointer;
+}
+
+.corner_right_up:active {
+	z-index: 3;
+	position: absolute;
+	right:43px;
+	top:18px;
+	margin: 0;
+    width: 129px;
+	height: 233px;
+	cursor:pointer;
+		
+}
+.corner_right_down{
+	z-index: 3;
+	position: absolute;
+	right:43px;
+	bottom:17px;
+    background: url("../images/butoane_main/corner_right_down2.png") no-repeat;
+	margin: 0;
+	display: inline-block;
+	width: 129px;
+	height: 233px;
+	cursor:pointer;
+}
+
+.corner_right_down:hover {
+	z-index: 3;
+	position: absolute;
+	right:43px;
+	bottom:17px;
+	background: url("../images/butoane_main/corner_right_down1.png") no-repeat;
+	margin: 0;
+	width: 129px;
+	height: 233px;
+	cursor:pointer;
+	
+}
+
+.corner_right_down:active {
+	z-index: 3;
+	position: absolute;
+	right:43px;
+	bottom:17px;
+	margin: 0;
+	width: 129px;
+	height: 233px;
+	cursor:pointer;
+}
+
+
+
+.play {
+	z-index: 3;
+ 	background: url("../images/litera_a/pause.png") no-repeat; 
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	width: 29px;
+	height: 29px;
+	position: absolute;
+}
+
+
+.play:active {
+	position: absolute;
+}
+
+.stop {
+	z-index: 2;
+ 	background: url("../images/litera_a/stop1.png") no-repeat; 
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	width: 29px;
+	height: 29px;
+	position: absolute;
+}
+
+.stop:hover {
+ 	background: url("../images/litera_a/stop2.png") no-repeat; 
+	width: 29px;
+	height: 29px;
+	position: absolute;
+}
+
+.stop:active {
+	position: absolute;
+	top: 501px;
+}
+
+.ui-dialog {
+    left: 0;
+    outline: 0 none;
+    padding: 0 !important;
+    margin: 0;
+    position: absolute;
+    top: 0;
+}
+.ui-dialog .ui-dialog-content .ui-widget-content{
+    padding: 0;margin: 0;
+}
+
+#success {
+    padding: 0px;
+    margin: 0px; 
+}
+
+.pagini{
+	opacity:0.5;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.pagini:hover {
+	opacity:1.0;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+/* background-position: 0 0;error unchecked */
+/* background-position: 0px -49px;ok unchecked */
+/* background-position: 0px -97px;error checked */
+/* background-position: 0px -145px;ok checked */
+/* background-position: 0px -193px;hover unchecked */
+/* background-position: 0px -241px;checked */
+/* background-position: 0px -289px;unchecked */
+
+.btn_games{
+ z-index:4000;
+ position:absolute;
+ cursor:pointer;
+ border-color:#E9646E;
+ border-color: rgba(233,100,110, 1);
+ -webkit-border-top-left-radius:10px;
+	-moz-border-radius-topleft:10px;
+	border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	border-bottom-right-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	border-bottom-left-radius:10px;
+ background-color:#D96E31; 
+  background: rgba(217, 110, 49, 0.2); 
+ opacity:0.2;
+ border:2px solid;
+ padding:0; 
+ border-radius:20%20%20%20%20%; border-color:#E9646E;border-style:solid;
+}
+.btn_games:hover{
+	
+ z-index:4000;
+ position:absolute;
+ cursor:pointer;
+ border-color:#E9646E;
+ border-color: rgba(233,100,110, 0,5);
+ -webkit-border-top-left-radius:10px;
+	-moz-border-radius-topleft:10px;
+	border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	border-bottom-right-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	border-bottom-left-radius:10px;
+ background-color:#D96E31;
+ background: rgba(217, 110, 49,0.3); 
+ opacity:0.3;
+ border:6px solid;
+ padding:0;
+border-radius:20%20%20%20%20%;border-color:#E9646E;border-style:solid;
+}
+
+
+.btn_games:active {
+ z-index:4000;
+ position:absolute;
+ cursor:pointer;
+border-color:#E9646E;
+ border-color: rgba(233,100,110, 1);
+ -webkit-border-top-left-radius:20px;
+ -webkit-border-top-left-radius:20px;
+ -moz-border-radius-topleft:20px;
+ border-top-left-radius:20px;
+ -webkit-border-top-right-radius:20px;
+ -moz-border-radius-topright:20px;
+ border-top-right-radius:20px;
+ -webkit-border-bottom-right-radius:20px;
+ -moz-border-radius-bottomright:20px;
+ border-bottom-right-radius:20px;
+ -webkit-border-bottom-left-radius:20px;
+ -moz-border-radius-bottomleft:20px;
+ border-bottom-left-radius:20px;
+background-color:#D96E31; 
+  background: rgba(217, 110, 49, 0.4); 
+ opacity:0.4;
+ border:4px solid;
+ padding:0;
+ border-radius:20%20%20%20%20%; border-color:#E9646E;border-style:solid;
+}
+
+.btn_complex {
+	z-index: 4;
+	position:absolute;
+	width: 110px; height: 69px; 
+	background: url("../images/logo/comlex.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+}
+.btn_interactiv {
+	z-index: 4;
+	position:absolute;
+	width: 110px; height: 69px; 
+	background: url("../images/logo/interactiv.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+}
+
+.btn_audio {
+	z-index: 4;
+	position:absolute;
+	width: 110px; height: 69px; 
+	background: url("../images/logo/audio.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+}
+
+
+.btn_puzzle {
+	z-index:4;
+	position:absolute;
+	width: 110px; height: 69px; 
+	background: url("../images/logo/puzzle.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+}
+
+.btn_bifeaza {
+	z-index:4;
+	position:absolute;
+	width: 110px; height: 69px; 
+	background: url("../images/logo/bifeaza.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+	
+}
+
+.btn_coloreaza {
+	z-index:4;
+	position:absolute;
+	width: 110px; height: 69px; 
+	background: url("../images/logo/coloreaza.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+}
+
+.btn_incercuieste {
+	z-index:4;
+	position:absolute;
+	width: 110px; height: 69px;  
+	background: url("../images/logo/incercuieste.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+	}
+
+.btn_observa {
+	z-index:4;
+	position:absolute;
+	width: 110px; height: 69px;  
+	background: url("../images/logo/observa.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+}
+
+.btn_save {
+	z-index:4;
+	position:absolute;
+	width: 110px; height: 69px;  
+	background: url("../images/logo/active.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+}
+
+.btn_scrie {
+	z-index:4;
+	position:absolute;
+	width: 110px; height: 69px;  
+	background: url("../images/logo/scrie.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+}
+
+.btn_subliniaza {
+	z-index:4;
+	position:absolute;
+	width: 110px; height: 69px;  
+	background: url("../images/logo/subliniaza.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+	cursor:pointer;
+}
+
+.btn_video {
+	z-index:4;
+	position:absolute;
+	width: 110px; height: 69px;  
+	background: url("../images/logo/video.gif") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+}
+

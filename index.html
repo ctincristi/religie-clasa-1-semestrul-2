@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+<title>Religie Clasa I Sem. 2</title>
+<link rel="SHORTCUT ICON" href="images/logo/avatar.gif" /> 
+ 
+<link rel="stylesheet" href="css/window_games.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link href="css/jquery.dataTables.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.dataTables_themeroller.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<link rel="stylesheet" type="text/css" href="css/themes/base/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="css/mediaelementplayer.css"/> 
+
+<script type="text/javascript" src="js/lib/jquery/jquery-1.10.1.js"></script>
+<script type="text/javascript" src="js/lib/jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="js/lib/bowser.min.js"></script>
+
+<script type="text/javascript" src="js/MainGame.js"></script>
+<script type="text/javascript" src="js/GameDates.js"></script>
+<script type="text/javascript" src="js/Util.js"></script>
+
+<script type="text/javascript" src="js/VideoPlayer.js"></script>
+<script type="text/javascript" src="js/lib/jQueryRotateCompressed.js"></script>
+
+<script type="text/javascript" src="js/games/GamesComplex.js"></script>
+<script type="text/javascript" src="js/games/GamesStatic.js"></script>
+<script type="text/javascript" src="js/games/GamesDiffCircle.js"></script>
+<script type="text/javascript" src="js/games/GamesChooseRadioBox.js"></script>
+<script type="text/javascript" src="js/games/GamesPuzzle.js"></script>
+<script type="text/javascript" src="js/games/GamesPuzzle_v2.js"></script>
+<script type="text/javascript" src="js/games/GamesWriteNumbers.js"></script>
+<script type="text/javascript" src="js/games/GamesSingleTick.js"></script>
+
+
+
+<script src="js/lib/jquery.ui.touch-punch.min.js"></script>
+<script src="js/lib/mediaelement-and-player.min.js"></script>
+<script src="js/lib/mediaelement.js"></script>
+<script type="text/javascript" src="js/lib/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" src="js/Main.js"></script> 
+<script type="text/javascript" src="js/storage/MyLocalStorage.js"></script> 
+<script type="text/javascript" src="js/storage/MySessionStorage.js"></script> 
+<script type="text/javascript" src="js/lib/jquery.cookie.js"></script> 
+
+</head>
+
+<body id="stage" class="background_book" style="align:center;width:100%;">
+
+	<div id="headerDiv" >
+			
+				<div id="background_buttons" style="position:absolute"></div>
+				<div id="header" style="position:absolute;z-index:1">
+					<div id="potentiometer" style="position:absolute;white-space: nowrap;left:0px;top:20px;" >
+						<a href="#" id="btnMinus" class="controlRemove" ></a>
+						<span id="mySlider" >-</span>
+						<div id="slider" style="display:none;" ></div>
+						<a href="#" id="btnPlus" class="controlAdd" ></a>
+					</div>
+					<div class="pagination" id="pagination" >
+						<a href="#" class="first" id="first" data-action="first" > </a> 
+						<a href="#" class="prev" id="prev" data-action="previous"></a>
+						 <span id="text_span">Mergi la pagina</span> 
+						 <input type="text" id="viewPage" class="text_pagination" current_page="2"
+						 data-max-page="64"  maxlength="2" size="2" value='1'/>
+						<span id="spanMaxPage" >/64</span>
+						<a href="#" class="next" id="next" data-action="next" > </a> 
+						<a href="#" class="last" id="last" data-action="last"  ></a>
+					</div>
+					<a href="#" id="cuprins" class="cuprins" ></a> 
+					&nbsp;&nbsp;&nbsp;&nbsp;<b><span id="userName" style="z-index:1000;cursor:pointer;color:black;"></span></b>
+					<a href="#"	id="portofoliu" class="portofoliu" ></a>
+					<a href="#"	id="portofoliu" class="portofoliu" onclick="window.open('ajutorGeneral.pdf', '_blank', 'fullscreen=yes'); return false;"></a>
+					<a href="#" id="rezultate" class="rezultate" ></a>
+				</div>
+			</div>
+	<div id="bb-bookblock" align="left" class="bb-bookblock3" 
+	style="position: absolute;padding:0px; margin:0px;top:65px; left:0px;   ">
+		<div id="bodyDiv" value="-4" align="center" style="position:absolute;z-index:3;"></div>
+	</div>
+	<div id="gameDialog"  align="center"  style="padding:0px;overflow:hidden;align:center; background:rgb(199,161,117);"> 
+		<img id="windowGameBackground" src="images/butoane_fereastra_joc/ramaDialog.png" style="position:absolute;"/>
+		<img id="windowGameBackgroundStatic" src="images/butoane_fereastra_joc/ramaDialog.png" style="position:absolute;visibility:hidden"/>
+		<div id="gameDiv"  style="position:absolute;border-style:solid;border:2px"></div>
+	</div>
+	<div id="helpDialog"  align="center"
+		style="padding:0px;overflow:hidden;background:rgba(217, 110, 49, 0.4);align:center">
+	</div>
+  <div id="showImage"  align="center">
+  </div>
+  
+  <div id="loginDialog" align=center> </div>
+  <div id="divForm" align=center style="background:#fdedaa;border:solid; border-radius:6px; border-color:#e57334;"></div>
+
+</body>
+
+</html>

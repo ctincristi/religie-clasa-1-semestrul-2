@@ -1,0 +1,31 @@
+
+#page_footer{
+width: 100%;
+top:2px;
+position: fixed;
+left:20px;
+float:left;
+}
+
+#control_remove{
+position:absolute;
+left:5px;
+float:left;
+}
+
+#slider{
+-webkit-appearance: none;
+-webkit-border-radius: 5px;
+background-image: -webkit-linear-gradient(top, #4B0082, #E6E6FA, #9370DB);
+width:175px; height:17px;
+float:left;
+margin-left:5px;
+top:left;
+}
+
+#control_add{
+position:absolute;
+left:207px;
+float:left;
+}
+

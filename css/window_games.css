@@ -1,0 +1,320 @@
+@CHARSET "ISO-8859-1";
+
+#iteratie{
+	font-family:Tymes New Roman;
+	font-weight:bold;
+	font-size:25px;
+	position:relative;
+	top:-10px;
+	right:-20px;
+	
+}
+
+
+.checkboxErrorUnchecked{
+	
+}
+
+
+.sounds:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+   input[type=checkbox] {
+     	display:none; 
+   }
+/*    input[type=checkbox] + label, input[type=checkbox] + label:hover,   input[type=checkbox]:checked + label */
+/*    { */
+/*         background: url('../images/butoane_fereastra_joc/checkbox.png') no-repeat; */
+/* 		padding-left:20px; */
+/* 		display: inline-block; */
+/* 		cursor:pointer; */
+/* 		width:25px; */
+/* 		height:40px; */
+/* 		margin-top:10px; */
+/*    } */
+   
+   input[type=checkbox] + label
+   {
+   background: url('../images/butoane_fereastra_joc/checkbox.png') no-repeat;
+		padding-left:20px;
+		display: inline-block;
+		cursor:pointer;
+		width:47px;
+		height:47px;
+	/*	margin-top:10px;*/
+        background-position: 0px -291px;
+   }
+   input[type=checkbox] + label:hover
+   {
+   background: url('../images/butoane_fereastra_joc/checkbox.png') no-repeat;
+		padding-left:20px;
+		display: inline-block;
+		cursor:pointer;
+	width:47px;
+		height:47px;
+		/*margin-top:10px;*/
+        background-position: 0px -195px;
+   }
+   input[type=checkbox]:checked + label
+   {
+   		background: url('../images/butoane_fereastra_joc/checkbox.png') no-repeat;
+		padding-left:20px;
+		display: inline-block;
+		cursor:pointer;
+		width:47px;
+		height:47px;
+	/*	margin-top:10px;*/
+        background-position: 0px -252px;
+   }
+
+.title{
+	z-index:1900;
+	position:absolute;
+	width:100%;
+	align:center;
+	font-family:Georgia; 
+	font-style:bold; 
+	font-size:20px;
+	color:rgb(182,66,4);
+}
+
+.close {
+	z-index: 2000;
+	position:absolute;   
+	width: 35px; height: 35px; 
+	background: url("../images/butoane_fereastra_joc/close1.png") no-repeat;
+    margin: 0;
+	display: inline-block;
+	border:0;
+	cursor:pointer;
+	
+}
+
+.close:hover {
+	z-index: 2000;
+	position:absolute;   
+	width: 35px; height: 35px; 
+	background: url("../images/butoane_fereastra_joc/close2.png") no-repeat;
+    margin: 0;
+	display: inline-block;
+	border:0;
+	cursor:pointer;
+}
+
+.acasa {
+	z-index: 6777;
+	width: 100px; height: 71px; 
+	background: url("../images/butoane_fereastra_joc/acasa1.png") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border:0;
+	cursor:pointer;
+	
+}
+
+.acasa:hover {
+	width: 100px; height: 71px; 
+	background: url("../images/butoane_fereastra_joc/acasa2.png") no-repeat;
+	cursor:pointer;
+}
+
+.acasa:disabled {
+	width: 100px; height: 71px; 
+	background: url("../images/butoane_fereastra_joc/acasa3.png") no-repeat;
+	cursor:pointer;
+}
+
+
+.ajutor {
+	z-index: 6777;
+	width: 100px; height: 71px;  
+	background: url("../images/butoane_fereastra_joc/ajutor1.png") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	cursor:pointer;
+	
+}
+
+.ajutor:hover {
+	width: 100px; height: 71px; 
+	background: url("../images/butoane_fereastra_joc/ajutor2.png") no-repeat;
+	cursor:pointer;
+}
+
+.ajutor:disabled {
+  width: 100px; height: 71px; 
+  background: url("../images/butoane_fereastra_joc/ajutor3.png") no-repeat;
+  center:1px;
+}
+
+.repeta {
+	z-index: 6;
+	width: 100px; height: 71px;  
+	background: url("../images/butoane_fereastra_joc/repeta1.png") no-repeat;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+    cursor:pointer;
+}
+
+.repeta:hover {
+	width: 100px; height: 71px;   
+	background: url("../images/butoane_fereastra_joc/repeta2.png") no-repeat;
+	cursor:pointer;
+}
+
+.repeta:disabled {
+	width: 100px; height: 71px;   
+    background: url("../images/butoane_fereastra_joc/repeta3.png") no-repeat;
+	center: 1px;
+}
+
+.verifica {
+	z-index: 6;
+	width: 100px; height: 71px;
+	background: url("../images/butoane_fereastra_joc/verifica1.png")no-repeat;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	cursor:pointer;
+}
+
+.verifica:hover {
+	width: 100px; height: 71px;
+	background: url("../images/butoane_fereastra_joc/verifica2.png") no-repeat;
+	cursor:pointer;
+}
+
+.verifica:disabled {
+	width: 100px; height: 71px;
+    background: url("../images/butoane_fereastra_joc/verifica3.png") no-repeat;
+}
+.word {
+	z-index: 6;
+	background: url("../images/butoane_fereastra_joc/words1.png")
+		no-repeat;
+	margin: 0;
+	display: inline-block;
+	border: 0;
+	background-size:100px 50px;
+	cursor:pointer;
+}
+
+.word:hover {
+	background: url("../images/butoane_fereastra_joc/words2.png") no-repeat;
+	background-size:100px 50px;
+	cursor:pointer;
+}
+
+.word:disabled {
+	background: url("../images/butoane_fereastra_joc/words3.png") no-repeat;
+	background-size:100px 50px;
+}
+
+
+
+
+
+.btn_stopPlayer {
+ z-index:5000;
+ position:absolute;
+ background-size:cover;
+ background: url("../images/videoPlayer/stop1.png")
+		no-repeat;
+cursor:pointer;
+}
+
+.btn_stopPlayer:hover {
+ z-index:5000;
+ position:absolute;
+ background-size:cover;
+ background: url("../images/videoPlayer/stop2.png")
+		no-repeat;
+cursor:pointer;
+}
+.btn_stopPlayer:disabled {
+ z-index:5000;
+ position:absolute;
+ background-size:cover;
+ background: url("../images/videoPlayer/stop2.png")
+		no-repeat;
+cursor:pointer;
+}
+.btn_playPlayer {
+ z-index:5000;
+ position:absolute;
+ background-size:cover;
+ background: url("../images/videoPlayer/play1.png")
+		no-repeat;
+ cursor:pointer;
+	
+}
+
+
+.btn_playPlayer:hover {
+ z-index:5000;
+ position:absolute;
+ background-size:cover;
+ background: url("../images/videoPlayer/play2.png")
+		no-repeat;
+cursor:pointer;
+}
+
+.btn_playPlayer:disabled {
+ z-index:5000;
+ position:absolute;
+ background-size:cover;
+ background: url("../images/videoPlayer/play2.png")
+		no-repeat;
+cursor:pointer;
+}
+
+.btn_pausePlayer {
+ z-index:5000;
+ position:absolute;
+ background-size:cover;
+ background: url("../images/videoPlayer/pause1.png")
+		no-repeat;
+cursor:pointer;
+	
+}
+
+
+.btn_pausePlayer:hover {
+ z-index:5000;
+ position:absolute;
+ background-size:cover;
+ background: url("../images/videoPlayer/pause2.png")
+		no-repeat;
+cursor:pointer;		
+}
+
+.btn_pausePlayer:disabled {
+ z-index:5000;
+ position:absolute;
+ background-size:cover;
+ background: url("../images/videoPlayer/pause2.png")
+		no-repeat;
+cursor:pointer;		
+}
+.starPlayer {
+ z-index:5000;
+ position:absolute;
+ background-size:cover;
+ background: url("../images/videoPlayer/starPlayer.png")
+		no-repeat;
+}
+ /* .ui-slider .ui-slider-handle{
+    background:url("../images/ico/pen.png") no-repeat;  background-size:cover;
+} */
+
+span.up { position:relative;cursor: pointer;font-size:3.6vw; width:50px;height:45px;align:left;color:grey; }
+span.down {padding-right:10px;border-radius:50%;border-color:blue;border-style:solid; }
+
+img.up { cursor: pointer;font-size:50px; width:150px;height:145px; }/*joc_pg14 countObject*/
+img.down { padding-bottom:10px;border-radius:50% 50% 50% 50%;border-color:blue;border-style:solid; }
+img.down[data-shape="pencil"] { 
+ padding-bottom:10px;border-radius:80% 0% 80% 0%;border-color:blue;border-style:solid;
+}
